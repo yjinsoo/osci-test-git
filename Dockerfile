@@ -10,6 +10,6 @@ ADD ./html/*.html /usr/share/nginx/html/
 ADD tomcat.conf /
 WORKDIR /usr/share/nginx/html
 EXPOSE 80
-CMD ["/bin/sh" , "-c" , "envsubst '$TOMCATS' < /tomcat1.conf > /etc/nginx/conf.d/tomcat.conf && exec nginx -g 'daemon off;'"]
+CMD ["/bin/sh" , "-c" , "envsubst '$TOMCATS' < /tomcat.conf > /etc/nginx/conf.d/tomcat.conf && exec nginx -g 'daemon off;'"]
 
 
