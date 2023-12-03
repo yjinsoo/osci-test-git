@@ -1,0 +1,224 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Mart - Board </title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="images/favicon.png">
+
+        <link rel="stylesheet" href="css/style.css">
+
+        <!--[if lt IE 9]>
+            <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+            <script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
+        <![endif]-->
+    </head>
+    <body>
+
+        <!-- PRELOADER -->
+        <div id="preloader">
+            <div class="preloader-area">
+            	<div class="preloader-box">
+            		<div class="preloader"></div>
+            	</div>
+            </div>
+        </div>
+
+
+        <section class="header-top-section">
+            <div class="container">
+                <div class="row">
+                    <div  class="col-md-6">
+                        <div class="header-top-content">
+                            <ul class="nav nav-pills navbar-left">
+                                <li><a href="#"></i><span>123-123456789</span></a></li>
+                                <li><a href="#"></i><span> info@mart.com</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div  class="col-md-6">
+                        <div class="header-top-menu">
+                            <ul class="nav nav-pills navbar-right">
+                                <li><a href="#">My Account</a></li>
+                                <li><a href="#">Wishlist</a></li>
+                                <li><a href="#">Cart</a></li>
+                                <li><a href="#">Checkout</a></li>
+                                <li><a href="account.jsp"></i>Register</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <header class="header-section">
+            <nav class="navbar navbar-default">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#"><b>M</b>art Dashboard</a>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">page</a></li>
+                            <li><a href="#">shop</a></li>
+                            <li class="active"><a href="board.html">Board</a></li>
+                            <li><a href="servey.html">Survey</a></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right cart-menu">
+                        <li><a href="#"><span>Search</span><span class="shoping-cart">0</span></a></li>
+                    </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container -->
+            </nav>
+        </header>
+	<article>
+        <div class="container">
+
+            <div class="aside">
+                ▷ 총 3개의 게시물이 있습니다.
+            </div>
+		<p>
+            <div class="select-grup">
+                <form action="">
+                    <span class="select-text">SELECT</span>
+                    <span>
+                        <select class="select-dropbox">
+                            <option value="s-title">제목</option>
+                            <option value="s-writer">글쓴이</option>
+                            <option value="s-">일시</option>
+                        </select>
+                    </span>
+                    <span>
+                        <input type="text" name="search" class="select-textbox">
+                        <input type="submit" class="button-black" value="검색" />
+                    </span>
+                </form>
+            </div>
+	    <p>
+            <table class="board-table">
+                <thead>
+                    <tr>
+                        <th>번호</th>
+                        <th>제목</th>
+                        <th>글쓴이</th>
+                        <th>일시</th>
+                        <th>조회수</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>5월 공지</td>
+                        <td>김준석</td>
+                        <td>2022-05-16</td>
+                        <td>30</td>
+                    </tr>
+                </tbody>
+
+                <tbody>
+                    <tr>
+                        <td>2</td>
+                        <td>4월 공지</td>
+                        <td>김준석</td>
+                        <td>2022-04-16</td>
+                        <td>20</td>
+                    </tr>
+                </tbody>
+
+                <tbody>
+                    <tr>
+                        <td>3</td>
+                        <td>3월 공지</td>
+                        <td>김준석</td>
+                        <td>2022-03-16</td>
+                        <td>40</td>
+                    </tr>
+                </tbody>
+            </table>
+	    	<p><p><p>	<p><p><p>	<p><p><p>				
+            <div class="center" >
+                <span><a href="#!">◀ 이전</a></span>
+                <span><a href="#!">1</a></span>
+                <span><a href="#!">다음 ▶</a></span>
+            </div>
+    </article>
+  <style>
+h2 { font-weight: border; }
+.hr1 { border: 0;
+height: 2px;
+background:  #d3d3d3;}
+    .grey { 
+     color: #727272;}
+     #strong { font-weight: 900;}
+
+            table {
+            width: 100%;
+            border-top: 1px solid #d3d3d3;
+            border-collapse: collapse;
+            }
+            th { background-color: #d3d3d3 ; 
+            border-top: 3px solid #727272;
+            }
+            th, td {
+            border-bottom: 1px solid #d3d3d3;
+            padding: 10px;
+            }
+
+  .greylist {
+  width: 50px;
+  height: 30px;
+  font-weight: 900;
+  color: white;
+  text-align: center;
+  background: grey;
+  border: solid 2px white;
+  border-radius: 5px;
+  }
+  .gradient {
+  width: 80px;
+  height: 30px;
+  font-weight: 900;
+  color: white;
+  text-align: center;
+  background: linear-gradient( to bottom, grey, black );
+  border: solid 2px white;
+  border-radius: 5px;
+  }
+
+            .left {text-align: left;}
+            .right {  float: right;}
+            .center { text-align: center;}
+
+a {color:black;
+text-decoration-line : none;}
+    </style>	
+	
+
+
+
+
+        </section>
+        <!-- JQUERY -->
+        <script src="js/vendor/jquery-1.11.2.min.js"></script>
+        <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/isotope.pkgd.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/wow.min.js"></script>
+        <script src="js/custom.js"></script>
+    </body>
+</html>
+

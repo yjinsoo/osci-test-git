@@ -1,0 +1,438 @@
+<!Doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Mart - Survey </title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="images/favicon.png">
+
+        <link rel="stylesheet" href="./css/style.css">
+	
+	    <!-- 반응형 뷰 포트를 사용하기 위함 -->
+	    <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=0">
+
+
+    	<!-- Jquery CDN 로드 : 항상 최신 버전 사용 -->    
+    	<script src="https://code.jquery.com/jquery-latest.min.js"></script>
+
+    	<!-- 구글 폰트 적용하기 위함 -->
+    	<link rel="preconnect" href="https://fonts.gstatic.com">
+    	<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+
+    	<!-- sweet alert 라이브러리 -->
+    	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> 
+
+    	<!-- 외부 CSS 스타일 지정 -->
+    	<link rel="stylesheet" type="text/css" href=./css/servey.css>    
+
+        <!--[if lt IE 9]>
+            <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+            <script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
+        <![endif]-->
+    </head>
+    <body>
+
+        <!-- PRELOADER -->
+        <div id="preloader">
+            <div class="preloader-area">
+            	<div class="preloader-box">
+            		<div class="preloader"></div>
+            	</div>
+            </div>
+        </div>
+
+
+        <section class="header-top-section">
+            <div class="container">
+                <div class="row">
+                    <div  class="col-md-6">
+                        <div class="header-top-content">
+                            <ul class="nav nav-pills navbar-left">
+                                <li><a href="#"></i><span>123-123456789</span></a></li>
+                                <li><a href="#"></i><span> info@mart.com</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div  class="col-md-6">
+                        <div class="header-top-menu">
+                            <ul class="nav nav-pills navbar-right">
+                                <li><a href="#">My Account</a></li>
+                                <li><a href="#">Wishlist</a></li>
+                                <li><a href="#">Cart</a></li>
+                                <li><a href="#">Checkout</a></li>
+                                <li><a href="account.jsp"></i>Register</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <header class="header-section">
+            <nav class="navbar navbar-default">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#"><b>M</b>art Survey</a>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">page</a></li>
+                            <li><a href="#">shop</a></li>
+                            <li><a href="board.html">Board</a></li>
+                            <li class="active" ><a href="servey.html">Survey</a></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right cart-menu">
+                        <li><a href="#"><span>Search</span><span class="shoping-cart">0</span></a></li>
+                    </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container -->
+            </nav>
+        </header>
+
+<!-------------------------------------여기서부터------------------------------------>	
+<body>
+
+	<!-- 타이틀 레이아웃 생성 실시 -->
+	<div id="i_title_container" 
+		class="cDivRelativeH cDivPtagHmVisible cBgBlueMiddle"
+		style="width: 100%; height: 10%; margin: 0 auto; padding: 0; border: none;">
+		<p id="i_title_txt" class="cPtagHmVisible cPtagFontSizeTitle cFontColorWhiteLight cFontBoldWeight cTextCenterWidthAlign">설문 조사</p>
+	</div>
+
+
+	<!-- 설문조사 설명 아이콘 레이아웃 -->
+	<div id="i_explanation_icon_container"
+		class="cDivRelativeH"
+		style="width: 80%; height: 4%; margin: 0 auto; padding: 0; border: none; top: 5%;">		
+		<div id="i_explanation_icon_image" 
+			class="cDivRelativeW cBgImageLeftSize"
+			style="width: 43px; height: 100%; margin: 0; padding: 0; border: none; 
+					background-image: url('../WebProject/assets/image/blue_people_icon.png');">			
+		</div>
+		<div id="i_explanation_icon_content" 
+			class="cDivRelativeW cDivPtagHmHidden"
+			style="width: 70%; height: 100%; margin: 0; padding: 0; border: none;">		
+			<p id="i_explanation_icon_txt" class="cPtagHmHidden cPtagFontSizeContent cFontColorBlueBold cFontBoldWeight cTextLeftWidthAlign">
+				개인정보 처리방침
+			</p>		
+		</div>
+	</div>
+	<!-- 설문조사 설명 박스 레이아웃 -->
+	<div id="i_explanation_container" class="cDivRelativeH cDivPtagHmVisible cBorderRadiusAll_10 cPtagOverFlow cBgWhiteLight cBorderAllBlueMiddle_1 cShadowBoxGray1px" style="width: 70%; height: 20%; margin: 0 auto; padding: 5%; top: 6%;">
+		<p id="i_explanation_txt" class="cPtagHmVisible cPtagFontSizeContent cFontColorBlueBold cFontNormalWeight cTextJustifyWidthAlign">
+		회사는 개인정보취급방침을 통하여 고객님께서 제공하시는 개인정보가 어떠한 용도와 방식으로 이용되고 있으며, 개인정보보호를 위해 어떠한 조치가 취해지고 있는지 알려드립니다. 회사는 개인정보취급방침을 개정하는 경우 웹사이트 공지사항(또는 개별공지)을 통하여 공지할 것입니다. 회사는 정보주체가 고객서비스(상담신청, 상담, 서비스 신청)를 이용하기 위하여 고객의 개인정보를 제공할때의 서비스제공을 위한 필수정보와, 보다 향상된 서비스 제공을 위한 선택정보를 온라인상 입력방법을 통하여 수집하고 있습니다. 수집하는 개인정보의 범위는 아래와 같습니다. 
+		</p>
+	</div>
+	<div id="i_null_container"
+		class="cDivRelativeH cBgWhiteLight"
+		style="width: 100%; height: 10%; margin: 0 auto; padding: 0%; border: none; top: 30%;">		
+	</div>
+
+	<form method="post" action="surveytest.jsp">
+	<!-- 설문조사 문제 레이아웃 -->
+	<div id="i_qna_1_container"
+		class="cDivRelativeH cBorderRadiusAll_10 cShadowBoxGray1px"
+		style="width: 80%; height: 30%; margin: 0 auto; padding: 0; border-top: none; top: 9%;">
+		<div id="i_qna_1_tittle"
+			class="cDivRelativeH cBorderRadiusTop_10 cBgBlueLight"
+			style="width: 100%; height: 23%; margin: 0 auto; padding: 0; top: 0%;">
+			<div id="i_qna_1_idx_container" 
+				class="cDivRelativeW cDivPtagHmHidden"
+				style="width: 35px; height: 100%; margin: 0; padding: 0; border: none; left: 2%">		
+				<p id="i_qna_1_idx_txt" class="cPtagHmHidden cPtagFontSizeContent cFontColorWhiteLight cFontBoldWeight cTextCenterWidthAlign" >
+				</p>		
+			</div>
+			<div id="i_qna_1_title_content_container" 
+				class="cDivRelativeW cDivPtagHmVisible"
+				style="width: 100%; height: 100%; margin: 0; padding: 0; border: none; left: 3%">		
+				<p id="i_qna_1_title_content_txt" class="cPtagHmVisible cPtagFontSizeContent cFontColorWhiteLight cFontNormalWeight cTextJustifyWidthAlign" style="color:#007bff;">
+					<b>[1] 이 브라우저 사용을 만족하십니까?</b>
+				</p>
+				<hr>		
+			</div>
+		</div>
+		<div id="i_qna_1_content"
+			class="cDivRelativeH"
+			style="width: 100%; height: 72%; margin: 0 auto; padding: 0; top: 2%;">
+			<div class="cDivRelativeH"
+				style="width: 90%; height: 20%; margin: 0; padding: 0; top: 0%; left: 2.2%">
+					<input type="radio" name="browser" value="5"/>매우만족<p>	
+					<input type="radio" name="browser" value="4"/> 만족	<p>				
+					<input type="radio" name="browser" value="3"/> 보통  <p>			
+					<input type="radio" name="browser" value="2"/> 불만족<p></p>					
+					<input type="radio" name="browser" value="1"/> 매우 불만족	<p></p>				
+
+			</div>		
+		</div>
+	</div>
+
+
+	<!-- 설문조사 문제 레이아웃 -->
+	<div id="i_qna_2_container"
+		class="cDivRelativeH cBorderRadiusAll_10 cShadowBoxGray1px"
+		style="width: 80%; height: 30%; margin: 0 auto; padding: 0; border-top: none; top: 12%;">
+		<div id="i_qna_2_tittle"
+			class="cDivRelativeH cBorderRadiusTop_10 cBgRedMiddle"
+			style="width: 100%; height: 23%; margin: 0 auto; padding: 0; top: 0%;">
+			<div id="i_qna_2_idx_container" 
+				class="cDivRelativeW cDivPtagHmHidden"
+				style="width: 35px; height: 100%; margin: 0; padding: 0; border: none; left: 2%">		
+				<p id="i_qna_2_idx_txt" class="cPtagHmHidden cPtagFontSizeContent cFontColorWhiteLight cFontBoldWeight cTextCenterWidthAlign">
+				</p>		
+			</div>
+			<div id="i_qna_2_title_content_container" 
+				class="cDivRelativeW cDivPtagHmVisible"
+				style="width: 80%; height: 100%; margin: 0; padding: 0; border: none; left: 3%">		
+				<p id="i_qna_2_title_content_txt" class="cPtagHmVisible cPtagFontSizeContent cFontColorWhiteLight cFontNormalWeight cTextJustifyWidthAlign" style="color:#007bff">
+					<b>[2] 상의에 대해서는 만족하십니까?</b>
+				</p>	
+			</div>
+		</div>
+		<br>
+		<div id="i_qna_1_content"
+		class="cDivRelativeH"
+		style="width: 100%; height: 72%; margin: 0 auto; padding: 0; top: 2%;">
+		<div class="cDivRelativeH"
+			style="width: 90%; height: 20%; margin: 0; padding: 0; top: 0%; left: 2.2%">
+				<input type="radio" name="upper" value="5"/>매우만족<p>	
+				<input type="radio" name="upper" value="4"/> 만족	<p>				
+				<input type="radio" name="upper" value="3"/> 보통  <p>			
+				<input type="radio" name="upper" value="2"/> 불만족<p></p>					
+				<input type="radio" name="upper" value="1"/> 매우 불만족	<p></p>				
+
+		</div>		
+	</div>
+</div>
+
+			</div>		
+		</div>
+	</div>
+
+
+	<!-- 설문조사 문제 레이아웃 -->
+	<div id="i_qna_3_container"
+		class="cDivRelativeH cBorderRadiusAll_10 cShadowBoxGray1px"
+		style="width: 80%; height: 30%; margin: 0 auto; padding: 0; border-top: none; top: 15%;">
+		<div id="i_qna_3_tittle"
+			class="cDivRelativeH cBorderRadiusTop_10 cBgBlackMiddle"
+			style="width: 100%; height: 23%; margin: 0 auto; padding: 0; top: 0%;">
+			<div id="i_qna_3_idx_container" 
+				class="cDivRelativeW cDivPtagHmHidden"
+				style="width: 35px; height: 100%; margin: 0; padding: 0; border: none; left: 2%">		
+				<p id="i_qna_3_idx_txt" class="cPtagHmHidden cPtagFontSizeContent cFontColorWhiteLight cFontBoldWeight cTextCenterWidthAlign">
+				</p>		
+			</div>
+			<div id="i_qna_3_title_content_container" 
+				class="cDivRelativeW cDivPtagHmVisible"
+				style="width: 80%; height: 100%; margin: 0; padding: 0; border: none; left: 3%">		
+				<p id="i_qna_3_title_content_txt" class="cPtagHmVisible cPtagFontSizeContent cFontColorWhiteLight cFontNormalWeight cTextJustifyWidthAlign" style="color:#007bff">
+					<b>[3] 하의에 대해서는 만족하십니까?</b>
+				</p>		
+			</div>
+		</div>
+
+		<br>
+		<div id="i_qna_1_content"
+		class="cDivRelativeH"
+		style="width: 100%; height: 72%; margin: 0 auto; padding: 0; top: 2%;">
+		<div class="cDivRelativeH"
+			style="width: 90%; height: 20%; margin: 0; padding: 0; top: 0%; left: 2.2%">
+				<input type="radio" name="pants" value="5"/>매우만족<p>	
+				<input type="radio" name="pants" value="4"/> 만족	<p>				
+				<input type="radio" name="pants" value="3"/> 보통  <p>			
+				<input type="radio" name="pants" value="2"/> 불만족<p></p>					
+				<input type="radio" name="pants" value="1"/> 매우 불만족	<p></p>				
+
+		</div>		
+	</div>
+</div>
+
+	<!-- 설문조사 문제 레이아웃 -->
+	<div id="i_qna_4_container"
+		class="cDivRelativeH cBorderRadiusAll_10 cShadowBoxGray1px"
+		style="width: 80%; height: 30%; margin: 0 auto; padding: 0; border-top: none; top: 18%;">
+		<div id="i_qna_4_tittle"
+			class="cDivRelativeH cBorderRadiusTop_10 cBgSkyMiddle"
+			style="width: 100%; height: 23%; margin: 0 auto; padding: 0; top: 0%;">
+			<div id="i_qna_4_idx_container" 
+				class="cDivRelativeW cDivPtagHmHidden"
+				style="width: 35px; height: 100%; margin: 0; padding: 0; border: none; left: 2%">		
+				<p id="i_qna_4_idx_txt" class="cPtagHmHidden cPtagFontSizeContent cFontColorWhiteLight cFontBoldWeight cTextCenterWidthAlign">
+				</p>		
+			</div>
+			<div id="i_qna_4_title_content_container" 
+				class="cDivRelativeW cDivPtagHmVisible"
+				style="width: 80%; height: 100%; margin: 0; padding: 0; border: none; left: 3%">		
+				<p id="i_qna_4_title_content_txt" class="cPtagHmVisible cPtagFontSizeContent cFontColorWhiteLight cFontNormalWeight cTextJustifyWidthAlign" style="color:#007bff">
+					<b>[4] 신발에 대해서는 만족하십니까?</b>
+				</p>		
+			</div>
+		</div>
+
+		<br>
+		<div id="i_qna_1_content"
+		class="cDivRelativeH"
+		style="width: 100%; height: 72%; margin: 0 auto; padding: 0; top: 2%;">
+		<div class="cDivRelativeH"
+			style="width: 90%; height: 20%; margin: 0; padding: 0; top: 0%; left: 2.2%">
+				<input type="radio" name="shoes" value="5"/>매우만족<p>	
+				<input type="radio" name="shoes" value="4"/> 만족	<p>				
+				<input type="radio" name="shoes" value="3"/> 보통  <p>			
+				<input type="radio" name="shoes" value="2"/> 불만족<p></p>					
+				<input type="radio" name="shoes" value="1"/> 매우 불만족	<p></p>				
+
+		</div>		
+	</div>
+</div>
+
+
+	<!-- 설문조사 문제 레이아웃 -->
+	<div id="i_qna_5_container"
+		class="cDivRelativeH cBorderRadiusAll_10 cShadowBoxGray1px"
+		style="width: 80%; height: 30%; margin: 0 auto; padding: 0; border-top: none; top: 21%;">
+		<div id="i_qna_5_tittle"
+			class="cDivRelativeH cBorderRadiusTop_10 cBgOrangeMiddle"
+			style="width: 100%; height: 23%; margin: 0 auto; padding: 0; top: 0%;">
+			<div id="i_qna_5_idx_container" 
+				class="cDivRelativeW cDivPtagHmHidden"
+				style="width: 35px; height: 100%; margin: 0; padding: 0; border: none; left: 2%">		
+				<p id="i_qna_5_idx_txt" class="cPtagHmHidden cPtagFontSizeContent cFontColorWhiteLight cFontBoldWeight cTextCenterWidthAlign">
+				</p>		
+			</div>
+			<div id="i_qna_5_title_content_container" 
+				class="cDivRelativeW cDivPtagHmVisible"
+				style="width: 80%; height: 100%; margin: 0; padding: 0; border: none; left: 3%">		
+				<p id="i_qna_5_title_content_txt" class="cPtagHmVisible cPtagFontSizeContent cFontColorWhiteLight cFontNormalWeight cTextJustifyWidthAlign" style="color:#007bff">
+					<b> [5] 회사의 서비스에 대해서는 만족하십니까? </b>
+				</p>		
+			</div>
+		</div>
+
+		<br>
+		<div id="i_qna_1_content"
+		class="cDivRelativeH"
+		style="width: 100%; height: 72%; margin: 0 auto; padding: 0; top: 2%;">
+		<div class="cDivRelativeH"
+			style="width: 90%; height: 20%; margin: 0; padding: 0; top: 0%; left: 2.2%">
+				<input type="radio" name="service" value="5"/>매우만족<p>	
+				<input type="radio" name="service" value="4"/> 만족	<p>				
+				<input type="radio" name="service" value="3"/> 보통  <p>			
+				<input type="radio" name="service" value="2"/> 불만족<p></p>					
+				<input type="radio" name="service" value="1"/> 매우 불만족	<p></p>				
+
+		</div>		
+	</div>
+</div>
+
+	<!-- 설문조사 경고 박스 레이아웃 -->
+	<div id="i_warm_container"
+		class="cDivRelativeH cDivPtagHmVisible cBorderRadiusAll_10 cBgWhiteLight cBorderAllRedMiddle_1"
+		style="width: 70%; height: 8%; margin: 0 auto; padding: 5%; top: 24%;">
+		<p id="i_warm_txt" class="cPtagHmVisible cPtagFontSizeContent cFontColorRedMiddle cFontNormalWeight cTextJustifyWidthAlign">			
+			이 설문지 작성 내용에 이상이 있는 경우, 설문지를 작성한 본인이 책임을 질 것입니다. 이 설문지는 사용자를 위한 견본 설문지 입니다.
+		</p>
+	</div>
+
+	<br>
+	<!-- 제출 버튼 박스 레이아웃 -->
+
+	<div>
+		<input type="submit" id="i_submit_container"
+		class="cDivRelativeH cDivPtagHmVisible cBorderRadiusAll_10 cBgBlueMiddle cCursorPointer cMouseHoverBgBlueBold"
+		style="width: 80%; height: 7%; margin: 0 auto; padding: 0; border: none; top: 27%;">
+		<p id="i_submit_txt" class="cPtagHmVisible cPtagFontSizeContent cFontColorWhiteLight cFontBoldWeight cTextCenterWidthAlign">
+		</p>
+	</div>
+	</form>
+
+	<!-- 공백 레이아웃 -->
+	<div id="i_null_container"
+		class="cDivRelativeH cBgWhiteLight"
+		style="width: 100%; height: 10%; margin: 0 auto; padding: 0%; border: none; top: 30%;">		
+	</div>
+	
+   <!-- 내부 CSS 스타일 지정 -->
+    <style>
+		/* [html, body 영역 스타일 지정] */
+		html, body {
+			width : 100%;
+			height : 100%;
+			margin : 0;
+			padding : 0;
+			border : none;
+			overflow:scroll-y; 
+			-webkit-overflow-scrolling:touch;					
+		}
+		/* [body 스크롤바 메인 스타일 지정] */
+		body::-webkit-scrollbar {			
+			width: 0px;					
+			background-color: #c1c1c1;
+		}
+		/* [body 스크롤바 thumb 스타일 지정] */
+		body::-webkit-scrollbar-thumb {					
+			background-color: #444444;
+		}
+		/* [body 전체 컴포넌트 공통 스타일 지정] */
+		* {
+			font-family: 'Nanum Gothic', sans-serif;
+		}
+
+
+
+		/* [라디오 버튼 커스텀 스타일 변경 실시] */
+		input[type='radio'] {
+			-webkit-appearance:none;
+			width:17px;
+			height:17px;
+			border:1px solid darkgray;
+			border-radius:50%;
+			outline:none;
+			background:#ffffff;
+		}
+		input[type='radio']:before {
+			content:'';
+			display:block;
+			width:70%;
+			height:70%;
+			margin: 15% auto;
+			border-radius:50%;  
+		}
+		input[type='radio']:checked:before {
+			background:#007bff;
+		}
+
+
+
+		/* [sweet alert 커스텀 사이즈] */
+		.swal-wide {
+			width:250px !important;
+		}
+
+    </style> 
+
+<!-------------------------여기까지 ------------------------>
+
+
+        </section>
+        <!-- JQUERY -->
+        <script src="js/vendor/jquery-1.11.2.min.js"></script>
+        <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/isotope.pkgd.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/wow.min.js"></script>
+        <script src="js/custom.js"></script>
+    </body>
+</html>
