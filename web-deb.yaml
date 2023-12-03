@@ -1,29 +1,23 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: pro3-web
+  name: dev-web
+  namespace: dev
 spec:
   selector:
     matchLabels:
-      app: pro3-web
-  replicas: 2
+      app: dev-web
+  replicas: 3
   template:
     metadata:
       labels:
-        app: pro3-web
+        app: dev-web
     spec:
       containers:
-      - name: pro3-web
-        image: 784695908961.dkr.ecr.us-west-2.amazonaws.com/nginx:dragon
+      - name: dev-web
+        image: jinsu0625/osci-test-nginx:version
         ports:
         - containerPort: 80
-        resources:
-          limits:
-            cpu: 500m
-            memory: 2Gi
-          requests:
-            cpu: 200m
-            memory: 1Gi
         env:
           - name: TOMCATS
             value: k8s-default-pro3apps-2c901554ca-ccd0daa811f69a71.elb.us-west-2.amazonaws.com
